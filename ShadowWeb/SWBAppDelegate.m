@@ -5,15 +5,17 @@
 //  Created by clowwindy on 2/16/13.
 //  Copyright (c) 2013 clowwindy. All rights reserved.
 //
-#import <Crashlytics/Crashlytics.h>
+//#import <Crashlytics/Crashlytics.h>
 
-#import "GZIP.h"
+#import "NSData+GZIP.h"
 #import "AppProxyCap.h"
 #import "SWBAppDelegate.h"
 
 #import "GCDWebServer.h"
+#import "GCDWebServerDataResponse.h"
 #import "SWBViewController.h"
 #import "ShadowsocksRunner.h"
+
 
 #define kProxyModeKey @"proxy mode"
 
@@ -40,7 +42,7 @@ void polipo_exit();
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self updateProxyMode];
 
-    [Crashlytics startWithAPIKey:@"fa65e4ab45ef1c9c69682529bee0751cd22d5d80"];
+//    [Crashlytics startWithAPIKey:@"fa65e4ab45ef1c9c69682529bee0751cd22d5d80"];
 
     [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
 

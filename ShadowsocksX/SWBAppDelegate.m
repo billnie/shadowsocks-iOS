@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 clowwindy. All rights reserved.
 //
 
-#import "GZIP.h"
+#import "NSData+GZIP.h"
 #import "SWBConfigWindowController.h"
 #import "SWBQRCodeWindowController.h"
 #import "SWBAppDelegate.h"

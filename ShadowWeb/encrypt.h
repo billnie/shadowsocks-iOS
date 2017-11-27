@@ -1,7 +1,9 @@
 #pragma once
 
 #import <stdint.h>
+//#define OPENSSL_API_COMPAT 0x10000
 #import <openssl/evp.h>
+
 
 struct encryption_ctx {
     EVP_CIPHER_CTX* ctx;
